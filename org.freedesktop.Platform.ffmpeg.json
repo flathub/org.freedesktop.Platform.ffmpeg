@@ -58,14 +58,15 @@
                 "--enable-decoder=pcm_u8,pcm_s16le,pcm_s24le,pcm_f32le",
                 "--enable-decoder=theora,vorbis,vp8,vp9,mp3,flac,webp",
                 "--enable-decoder=rawvideo,png,gif",
+                "--enable-hwaccel=vp9_vaapi",
                 "--enable-parser=opus,vp3,vorbis,vp8,mpegaudio,flac",
                 "--enable-demuxer=ogg,matroska,wav,mp3,gif,flac",
                 "--enable-filter=crop,scale",
                 "--enable-protocol=file"
                 , /* These are specific to the extension */
-                "--enable-decoder=aac,h264,h263,ac3,mpeg4",
-                "--enable-hwaccel=h264_vaapi,h264_vdpau",
-                "--enable-parser=aac,h264,ac3,mpeg4video",
+                "--enable-decoder=aac,hevc,h264,h263,ac3,eac3,truehd,mlp,dca,mpeg4",
+                "--enable-hwaccel=h264_vaapi,h264_vdpau,hevc_vaapi,hevc_vdpau",
+                "--enable-parser=aac,hevc,h264,ac3,dca,mpeg4video",
                 "--enable-demuxer=avi,aac,h264,mov,ac3,m4v,m4a"
             ],
             "sources": [
